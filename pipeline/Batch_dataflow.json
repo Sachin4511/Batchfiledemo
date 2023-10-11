@@ -36,14 +36,14 @@
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings",
-							"skipLineCount": 100
+							"skipLineCount": 0
 						}
 					},
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobStorageWriteSettings",
-							"blockSizeInMB": 100
+							"blockSizeInMB": 1000
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
