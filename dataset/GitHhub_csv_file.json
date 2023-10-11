@@ -1,0 +1,23 @@
+{
+	"name": "GitHhub_csv_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlob_Output_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "HTTP",
+				"container": "destination"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
