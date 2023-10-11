@@ -9,7 +9,7 @@
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
-					"retryIntervalInSeconds": null,
+					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
 				},
@@ -30,12 +30,12 @@
 						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobStorageWriteSettings",
-							"blockSizeInMB": 100
+							"blockSizeInMB": 10
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"fileExtension": ".csv"
 						}
 					},
 					"enableStaging": false,
