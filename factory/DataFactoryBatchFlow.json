@@ -1,0 +1,9 @@
+{
+	"name": "DataFactoryBatchFlow",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a69ca59f-8146-4ec6-87b0-b4c488a247ab",
+		"tenantId": "76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61"
+	}
+}
