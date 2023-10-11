@@ -8,5 +8,4 @@ Dependendacy on common DLL's
 ",,,
 40,,sherlockmanagementservice,API,High,C# + SP Migration,sherlockmanagementservice,https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_versionControl?path=%24/Sherlock/Dev/SherlockManagementService,18-07-2022,29-07-2022,Completed/Testing Pending,,Yes,"Required Postman collection for migrated services for testing
 Dependendacy on common DLL's
-8,web1a/1b,gangwayadmin,Asp.net MVC Web,High,C# + SP Migration,,https://ccldev.visualstudio.com/DefaultCollection/Gangway/_versionControl,16-06-2022,01-07-2022,Completed/Testing Pending,Run time errors while testing,No,"Dependendacy on common DLL's
-Dependency on few more services for testing application",,,
+
