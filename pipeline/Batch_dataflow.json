@@ -13,20 +13,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "Data",
-						"value": "10"
-					},
-					{
-						"name": "Source",
-						"value": "Sachin4511/Batchfiledemo/main/MasterList_Testings.csv"
-					},
-					{
-						"name": "Destination",
-						"value": "githubfile/HTTP/"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
