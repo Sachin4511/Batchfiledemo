@@ -43,7 +43,7 @@
 						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobStorageWriteSettings",
-							"blockSizeInMB": 1000
+							"blockSizeInMB": 100
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
