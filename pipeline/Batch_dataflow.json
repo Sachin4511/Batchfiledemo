@@ -7,13 +7,26 @@
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
-					"timeout": "0.12:00:00",
+					"timeout": "7.00:00:00",
 					"retry": 0,
-					"retryIntervalInSeconds": 30,
+					"retryIntervalInSeconds": 100,
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Data",
+						"value": "120"
+					},
+					{
+						"name": "Source",
+						"value": "Sachin4511/Batchfiledemo/main/MasterList_Testings.csv"
+					},
+					{
+						"name": "Destination",
+						"value": "githubfile/HTTP/"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
@@ -22,14 +35,41 @@
 							"requestMethod": "GET"
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "DelimitedTextReadSettings",
+							"skipLineCount": 100
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings",
+							"blockSizeInMB": 100
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "Testresult",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				]
