@@ -8,19 +8,3 @@ Dependendacy on common DLL's
 ",,,
 40,,sherlockmanagementservice,API,High,C# + SP Migration,sherlockmanagementservice,https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_versionControl?path=%24/Sherlock/Dev/SherlockManagementService,18-07-2022,29-07-2022,Completed/Testing Pending,,Yes,"Required Postman collection for migrated services for testing
 Dependendacy on common DLL's
-Dependency on few more services for testing application",Pre  & post migration run need to be recorded,,
-51,,CommonFramework,Library,High,Only C# Migration,CommonFramework (Workbook),https://ccldev.visualstudio.com/DefaultCollection/StrategicServices/_versionControl?path=%24/StrategicServices/CommonFramework,16-06-2022,,Inprogress,,,Complexity of error is more(around 130+ errors),,,
-,,Authenticationservice,,,,,,,,,,,,,,
-,,Client.Common,Library,,,,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Client.Common,16-06-2022,,,,,Yet To start,,,
-,,ConfigurationService,API,,,,,,,Inprogress,,Yes,,,,
-,,loginservice,API,,,,https://ccldev.visualstudio.com/GuestTechStrategicServices/_git/Login,,,Inprogress,,,Yet To start,,,
-41,,sherlockwebservice,API,High,C# + SP Migration,sherlockwebservice,https://ccldev.visualstudio.com/DefaultCollection/StrategicServices/_versionControl?path=%24/StrategicServices/ImagingMediaWindow,18-07-2022,29-07-2022,Completed/Testing Pending,,Yes,"Required Postman collection for migrated services for testing
-Dependendacy on common DLL's",,,
-5,api5a/5b,analyticsservice,API,Medium,Only C# Migration,analyticsservice,https://ccldev.visualstudio.com/DefaultCollection/GuestTechStrategicServices/_git/AnalyticsService ,16-06-2022,01-07-2022,Completed/Testing Pending,Run time errors while testing,Yes,"Dependendacy on common DLL's
--Required Postman collection for migrated services for testing
--Data first Model architecture need to be inplemented
-
-Dependency on Order service.",,,
-6,,applicationservice,API,Medium,C# + SP Migration,applicationservice,https://ccldev.visualstudio.com/DefaultCollection/GuestTechStrategicServices/_git/ShoreEx,16-06-2022,01-07-2022,Inprogress,,Yes- ShoreEx,"Required Postman collection for migrated services for testing
-Dependendacy on common DLL's
-Dependency on few more services for testing application",,,
