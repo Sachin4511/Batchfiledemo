@@ -1,0 +1,79 @@
+Sr No.,Server,Services,Application Type,Complexity,Rewrite/Upgrade ,UpgradeAssistantServiceLog (Refere excelsheet Tabs),Path,Start Date ,End Date ,Development Sprint,Comment,Postman Collection,Blocker's,,Request ,Response
+1,mobileapp,FHMA-Leviathan,API,Medium,Only C# Migration,FHMA,https://ccldev.visualstudio.com/Middleware/_git/carnival-server-dotnet,16-06-2022,01-07-2022,Last Sprint,,,,,,
+2,,FHMA-Leviathan-configuration,API,Low,Only C# Migration,FHMA,https://ccldev.visualstudio.com/Middleware/_git/carnival-server-dotnet,16-06-2022,01-07-2022,Last Sprint,,,,,,
+3,web1a/1b,gangwayadmin,Asp.net MVC Web,High,C# + SP Migration,,https://ccldev.visualstudio.com/DefaultCollection/Gangway/_versionControl,16-06-2022,01-07-2022,Completed/Testing Pending,Run time errors while testing,No,"Dependendacy on common DLL's
+Dependency on few more services for testing application",,,
+4,,OPMS/SherlockAdmin,Asp.net MVC Web,High,C# + SP Migration,, https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_git/AdminTool,16-06-2022,01-07-2022,Completed/Testing Pending,,,"Required Postman collection for migrated services for testing
+Dependendacy on common DLL's
+",,,
+40,,sherlockmanagementservice,API,High,C# + SP Migration,sherlockmanagementservice,https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_versionControl?path=%24/Sherlock/Dev/SherlockManagementService,18-07-2022,29-07-2022,Completed/Testing Pending,,Yes,"Required Postman collection for migrated services for testing
+Dependendacy on common DLL's
+Dependency on few more services for testing application",Pre  & post migration run need to be recorded,,
+51,,CommonFramework,Library,High,Only C# Migration,CommonFramework (Workbook),https://ccldev.visualstudio.com/DefaultCollection/StrategicServices/_versionControl?path=%24/StrategicServices/CommonFramework,16-06-2022,,Inprogress,,,Complexity of error is more(around 130+ errors),,,
+,,Authenticationservice,,,,,,,,,,,,,,
+,,Client.Common,Library,,,,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Client.Common,16-06-2022,,,,,Yet To start,,,
+,,ConfigurationService,API,,,,,,,Inprogress,,Yes,,,,
+,,loginservice,API,,,,https://ccldev.visualstudio.com/GuestTechStrategicServices/_git/Login,,,Inprogress,,,Yet To start,,,
+41,,sherlockwebservice,API,High,C# + SP Migration,sherlockwebservice,https://ccldev.visualstudio.com/DefaultCollection/StrategicServices/_versionControl?path=%24/StrategicServices/ImagingMediaWindow,18-07-2022,29-07-2022,Completed/Testing Pending,,Yes,"Required Postman collection for migrated services for testing
+Dependendacy on common DLL's",,,
+5,api5a/5b,analyticsservice,API,Medium,Only C# Migration,analyticsservice,https://ccldev.visualstudio.com/DefaultCollection/GuestTechStrategicServices/_git/AnalyticsService ,16-06-2022,01-07-2022,Completed/Testing Pending,Run time errors while testing,Yes,"Dependendacy on common DLL's
+-Required Postman collection for migrated services for testing
+-Data first Model architecture need to be inplemented
+
+Dependency on Order service.",,,
+6,,applicationservice,API,Medium,C# + SP Migration,applicationservice,https://ccldev.visualstudio.com/DefaultCollection/GuestTechStrategicServices/_git/ShoreEx,16-06-2022,01-07-2022,Inprogress,,Yes- ShoreEx,"Required Postman collection for migrated services for testing
+Dependendacy on common DLL's
+Dependency on few more services for testing application",,,
+7,,Authenticationservice,API,High,Complete Rewrite,Authenticationservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Authentication,Phase2,Phase2,,,Yes,,,,
+8,,Authorizationservice,API,High,Complete Rewrite,Authorizationservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Authorization,Phase2,Phase2,,,Yes,,,,
+9,,businessservice,API,Medium,C# + SP Migration,businessservice,https://ccldev.visualstudio.com/DefaultCollection/GuestTechStrategicServices/_git/ShoreEx,16-06-2022,01-07-2022,Inprogress,,,"Required Postman collection for migrated services for testing
+Dependendacy on common DLL's
+Dependency on few more services for testing application",,,
+10,,Configurationservice,API,High,Complete Rewrite,Configurationservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/ConfigurationService,16-06-2022,01-07-2022,,,,,,,
+11,,contentservice,API,Medium,Only C# Migration,contentservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Content,16-06-2022,01-07-2022,Inprogress,,Yes,dependancy on orderproduct,,,
+12,,crewservice,API,Medium,C# + SP Migration,crewservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Crew,16-06-2022,01-07-2022,Completed/Testing Pending,,Yes,"Required Postman collection for migrated services for testing
+-Data first Model architecture need to be inplemented
+Dependendacy on common DLL's
+Dependency on few more services for testing application",,,
+13,,datasynchronizationservice,API,Medium,C# + SP Migration,datasynchronizationservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/DataSynchronization,16-06-2022,01-07-2022,Inprogress,,,"Required Postman collection for migrated services for testing
+Dependendacy on common DLL's
+Dependency on few more services for testing application",,,
+14,,deviceservice,API,Medium,C# + SP Migration,deviceservice,Yet To Receive Code,,,,,,,,,
+15,,exceptionconfigurationservice,API,Medium,Only C# Migration,exceptionconfigurationservice,https://ccldev.visualstudio.com/DefaultCollection/GuestTechStrategicServices/_git/ExceptionConfigurationService,04-07-2022,15-07-2022,Last Sprint,,,,,,
+16,,externalsystemservice,API,Medium,Only C# Migration,externalsystemservice,https://ccldev.visualstudio.com/DefaultCollection/GuestTechStrategicServices/_git/ExternalSystemsService,04-07-2022,15-07-2022,,,,,,,
+17,,notificationservice,API,Medium,Only C# Migration,notificationservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/NotificationService,04-07-2022,15-07-2022,Last Sprint,,,,,,
+18,,orderproductservice,API,High,Only C# Migration,orderproductservice,,04-07-2022,15-07-2022,Last Sprint,,,,,,
+19,,productservice,API,Medium,C# + SP Migration,productservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Product,04-07-2022,15-07-2022,,,Yes,,,,
+20,,referencedataservice,API,Medium,C# + SP Migration,referencedataservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/ReferenceData,04-07-2022,15-07-2022,,,,,,,
+21,,reportingservice,API,Medium,C# + SP Migration,reportingservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Reporting,04-07-2022,15-07-2022,,,,,,,
+22,,shiptimeservice,API,Low,C# + SP Migration,shiptimeservice,,04-07-2022,15-07-2022,,,Yes,,,,
+23,,shoreexprocess,API,Medium,Only C# Migration,shoreexprocess,,04-07-2022,15-07-2022,,,,,,,
+24,,targetedoffersservice,API,Medium,Only C# Migration,targetedoffersservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/TargetedOffersAPI,04-07-2022,15-07-2022,,,,,,,
+25,api4a/4b,darkroomprocessingwindowservice,Windows Service,High,C# + SP Migration,darkroomprocessingwindowservice,https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_versionControl?path=%24/Sherlock/Dev/DarkRoomSimulator,04-07-2022,15-07-2022,,,,,,,
+26,,embarkationstatisticsservice,API,Medium,C# + SP Migration,embarkationstatisticsservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/EmbarkationStatistics/,04-07-2022,15-07-2022,,,,,,,
+27,,guestservice,API,Medium,C# + SP Migration,guestservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Guest,04-07-2022,15-07-2022,,,,,,,
+28,,imagingmediaservice,API,High,C# + SP Migration,imagingmediaservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/ImagingMedia,04-07-2022,15-07-2022,,,,,,,
+29,,personalertservice,API,Medium,C# + SP Migration,personalertservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/PersonAlert,04-07-2022,15-07-2022,,,,,,,
+30,,personeventservice,API,Medium,C# + SP Migration,personeventservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/PersonEvent,04-07-2022,15-07-2022,,,,,,,
+31,,personstatusservice,API,Medium,C# + SP Migration,personstatusservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/PersonStatus,04-07-2022,15-07-2022,,,,,,,
+32,,reservationservice,API,High,C# + SP Migration,reservationservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Reservation,04-07-2022,15-07-2022,,,,,,,
+33,,shipservice,API,Medium,C# + SP Migration,shipservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Ship,04-07-2022,15-07-2022,,,,,,,
+34,,visitorservice,API,Medium,C# + SP Migration,visitorservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Visitor,04-07-2022,15-07-2022,,,,,,,
+35,,voyageservice,API,Medium,C# + SP Migration,voyageservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/Voyage,04-07-2022,15-07-2022,,,,,,,
+36,api2a/2b,capturedmediaservice,API,High,C# + SP Migration,capturedmediaservice,https://ccldev.visualstudio.com/StrategicServices/_versionControl?path=%24/StrategicServices/CapturedMedia,18-07-2022,29-07-2022,,,,,,,
+37,,guestimagingservice,API,High,C# + SP Migration,guestimagingservice,https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_versionControl?path=%24/Sherlock/Dev/GuestImagingService,18-07-2022,29-07-2022,,,,,,,
+38,,guestreferencephotoservice,API,High,C# + SP Migration,guestreferencephotoservice,https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_versionControl?path=%24/Sherlock/Dev/ReferencePhotoUploadUtility,18-07-2022,29-07-2022,,,,,,,
+39,,loginservice,API,Medium,C# + SP Migration,loginservice,,18-07-2022,29-07-2022,,,,,,,
+42,app4,seams,Asp.net MVC Web,High,C# + SP Migration,seams web app,$/StrategicServices/Seams-Code/FHMACMS,18-07-2022,29-07-2022,,,,,,,
+43,svc1/svc2,imagingwindowsservice,Windows Service,High,C# + SP Migration,imagingwindowsservice,https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_versionControl?path=%24/Sherlock/Dev/ImageProcessingWindowsService,Phase2,Phase2,,,,,,,
+44,,imageprocessingwindowsservice,Windows Service,High,C# + SP Migration,imageprocessingwindowsservice,https://ccldev.visualstudio.com/DefaultCollection/Sherlock/_versionControl?path=%24/Sherlock/Dev/ImageProcessingWindowsService,Phase2,Phase2,,,,,,,
+45,,orderprocessingwindowsservice,Windows Service,High,C# + SP Migration,orderprocessingwindowsservice,,Phase2,Phase2,,,,,,,
+46,dmzweb2,seamsapi,,Medium,,seamsapi,,18-07-2022,29-07-2022,,,,,,,
+47,,weatherapi/Carnival.SeaMS.WeatherInfo,Library,Medium,C# + SP Migration,weatherapi,,18-07-2022,29-07-2022,,,,,,,
+48,,ShoreExCacheService,Windows Service,Medium,Only C# Migration,Shoreex Cache Service,https://ccldev.visualstudio.com/DefaultCollection/StrategicServices/_versionControl?path=%24/StrategicServices/ShoreEx/SitecoreCacheService,18-07-2022,29-07-2022,,,,,,,
+49,,"TurnStyle Middleware	",API,Low,Only C# Migration,TurnStyleGateway,https://ccldev.visualstudio.com/DefaultCollection/Middleware/_git/TurnStyleMiddleware,18-07-2022,29-07-2022,,,,,,,
+50,,"Spa Cache Service	",Windows Service,Medium,Only C# Migration,SpaCacheService,https://ccldev.visualstudio.com/DefaultCollection/StrategicServices/_versionControl?path=%24/StrategicServices/Spa/SitecoreCacheService,Phase2,Phase2,,,,,,,
+,,DataArchivalService,Windows Service,,,,,,Phase3,,,,,,,
+,,ShipboardSynchronization Service,Windows Service,,,,,,Phase4,,,,,,,
+,,Carnival.SeaMS.Replication.WindowsService,Windows Service,,,,,,,,,,,,,
+,,Carnival.SeaMS.VoyageApi,Web Application,High,,Seams Voyage,Seams-Code\Carnival.SeaMS.VoyageApi,,,,,,,,,
