@@ -9,7 +9,7 @@
 				"policy": {
 					"timeout": "7.00:0:00",
 					"retry": 0,
-					"retryIntervalInSeconds": 10,
+					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
 				},
@@ -60,6 +60,22 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "refresh",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Batch_data_flow",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
+				}
 			}
 		],
 		"annotations": []
