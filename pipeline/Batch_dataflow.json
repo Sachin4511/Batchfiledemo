@@ -60,22 +60,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "refresh",
-				"type": "Wait",
-				"dependsOn": [
-					{
-						"activity": "Batch_data_flow",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": 10
-				}
 			}
 		],
 		"annotations": []
