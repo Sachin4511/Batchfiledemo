@@ -60,8 +60,85 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Get_CSVfile",
+				"type": "GetMetadata",
+				"dependsOn": [
+					{
+						"activity": "Batch_data_flow",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "Testresult",
+						"type": "DatasetReference"
+					},
+					"fieldList": [],
+					"storeSettings": {
+						"type": "HttpReadSettings",
+						"requestMethod": "GET"
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Get_CSVfile",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get_CSVfile').output.childitems",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "Fullpath",
+								"value": {
+									"value": "@concat('/input/',item().name)",
+									"type": "Expression"
+								}
+							}
+						}
+					]
+				}
 			}
 		],
+		"variables": {
+			"Fullpath": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
