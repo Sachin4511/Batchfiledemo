@@ -2,15 +2,15 @@
 	"name": "Testresult",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer1",
+			"referenceName": "Github_data",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "Sachin4511/Batchfiledemo/main/MasterList_Testings.csv"
+				"type": "AzureBlobStorageLocation",
+				"container": "githubfile"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
