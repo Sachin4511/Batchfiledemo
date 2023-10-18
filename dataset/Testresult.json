@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"folderPath": "githubfile/HTTP/HTTP/HTTP/HTTP/Sachin4511/Batchfiledemo/main",
 				"container": "githubfile"
 			},
 			"columnDelimiter": ",",
