@@ -5,7 +5,14 @@
 			{
 				"name": "Batch_data_flow",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Wait",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:0:00",
 					"retry": 0,
@@ -62,12 +69,12 @@
 				]
 			},
 			{
-				"name": "Wait1",
+				"name": "Wait",
 				"type": "Wait",
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"waitTimeInSeconds": 1
+					"waitTimeInSeconds": 30
 				}
 			}
 		],
