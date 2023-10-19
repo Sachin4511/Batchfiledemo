@@ -1,0 +1,11 @@
+{
+	"name": "AzureBlobStorage2",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"containerUri": "https://azuredemobatch128.blob.core.windows.net/githubcsvfile",
+			"authenticationType": "Anonymous"
+		}
+	}
+}
