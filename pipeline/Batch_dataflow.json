@@ -7,7 +7,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Wait",
+						"activity": "Waitforconnection",
 						"dependencyConditions": [
 							"Completed"
 						]
@@ -57,7 +57,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Testresult",
+						"referenceName": "CopyCSV_file",
 						"type": "DatasetReference"
 					}
 				],
@@ -69,17 +69,17 @@
 				]
 			},
 			{
-				"name": "Wait",
+				"name": "Waitforconnection",
 				"type": "Wait",
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"waitTimeInSeconds": 30
+					"waitTimeInSeconds": 10
 				}
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2023-10-13T07:26:12Z"
+		"lastPublishTime": "2023-10-19T06:01:20Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

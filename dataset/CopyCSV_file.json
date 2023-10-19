@@ -1,17 +1,16 @@
 {
-	"name": "DelimitedText1",
+	"name": "CopyCSV_file",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Github_data",
+			"referenceName": "HttpServer1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"folderPath": "githubfile/HTTP/HTTP/HTTP/HTTP/Sachin4511/Batchfiledemo/main/Sachin4511/Batchfiledemo",
-				"container": "githubfile"
+				"type": "HttpServerLocation",
+				"relativeUrl": "Sachin4511/Batchfiledemo/main/MasterList_Testings.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
