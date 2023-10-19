@@ -1,0 +1,24 @@
+{
+	"name": "trigger_Storage",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "DatafactoryPipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/exceldata/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/12788db4-52bf-4d95-99c1-4e26a5a9cb89/resourceGroups/AZCPBLTYIntegrationsPoC/providers/Microsoft.Storage/storageAccounts/demostoragefileshare",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
